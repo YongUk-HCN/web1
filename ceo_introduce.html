@@ -1,0 +1,128 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" href="style.css">
+<title>무제 문서</title>
+<style>
+*{margin:0; padding:0;}
+#wrap{margin:0 auto; width:75%;}
+#box_b{float:left; width:100%; }
+#box_c{float:right; width:100%;}
+#box_d{float:left; width:100%; }
+#box_e{float:right; width:100%;}
+#navi{float:right; width:100%; }
+img, video{
+	width:100%;
+	max-width:100%;
+}
+
+@media screen and (max-width:1024px) {
+  #wrap{width:100%;}
+}
+@media screen and (max-width:800px) {
+  #wrap{width:100%;}
+}
+@media screen and (max-width:600px) {
+  #box_b{float:none; width:auto;}
+  #box_c{float:none; width:auto;}
+}
+#navi, #navi ul #navi ul li, #navi ul li a{
+	 margin:0;
+	 padding:o;
+	 line-height:1;
+}
+#navi{
+	 background:#000;
+}
+#navi ul{
+	list-style:none;
+	display:block;
+}
+#navi ul:after{
+	 content:'';
+	 displayblock;
+	 clear:both;
+	 visibility:hidden;
+}
+#navi ul li{
+	 float:left;
+	 display:block;
+	 padding:0;
+}
+#navi ul li a{
+	 display:block;
+	 sition:relative;
+	 color:#fff;
+	 text-decoration:none;
+	 padding:15px 25px;
+	 font-family:'돋움',sans-serif;
+	 font-weight:bold;
+	 font-size:14px;
+	 transition:color .25s;
+	 -webkit-transition:color .25s;
+	 -moz-transition:color .25s;
+	 -o-transition:color .25s;
+}
+#navi ul li a:hover{
+	color: #f00505;
+	text-align: center;
+}
+#navi ul li a:hover:before;
+ width:100%;
+ }
+ #navi ul li a:before{
+	  content:'';
+	  display:block;
+	  position:absolute;
+	  left:0;
+	  bottom:0;
+	  height:3px;
+	  width:0;
+	  background:#f00505;
+	 transition:width .25s;
+	 -webkit-transition:width .25s;
+	 -moz-transition:width .25s;
+	 -o-transition:width .25s;
+}
+#navi ul li.active a{
+	color:#f00505;
+}
+#navi ul li.active a:before{
+	width:100%;
+}
+@media screen and (max-width:768px){
+	 #navi ul li{
+		  float:none;
+	 }
+	  #navi ul li a{
+		  width:100%;
+		  box-sizing:border-box;
+		  -webkit-box-sizing:border-box;
+		  -moz-box-sizing:border-box;
+		  -o-box-sizing:border-box;
+	  }
+	  #navi ul li a:after{
+		  display:none;
+	  }
+</style>
+</head>
+
+<body>
+<div id="wrap">
+ <div id="box_a"><img src="images/main_background.png" /></div>
+ <div id='navi'>
+ <ul>
+ 	<li ><a href="main.html">Home</a></li>
+ 	<li><a href="#">Beauty</a></li>
+  <li><a href="https://ovenapp.io/view/YKfUyOdcV90F4nRguVrPwoEWNZ3WHQqy/Q1392">Medical</a></li>
+  <li><a href="#">Healthcare</a></li>
+  <li class="active"><a href="ceo_introduce.html">Block-Chain</a><li>
+  <li><a href="subs_Advertising.html">About</a></li>
+ </ul>
+ </div>
+ <div id="box_b"><img src="images/ceo_introduce_backround.png" /></div>
+ <div id="box_c"><img src="images/copyright_background.png" /></div>
+</div>
+</body>
+</html>
